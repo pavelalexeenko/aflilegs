@@ -1,5 +1,5 @@
 {
-  "name": "legendary-selector",
+  "name": "legendaryselector",
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gh:build": "ng build --prod --base-href \"https://pavelalexeenko.github.io/legendary-selector/\"",
+    "gh:build": "ng build --prod --base-href \"https://pavelalexeenko.github.io/legendaryselector/\"",
     "gh:deploy": "angular-cli-ghpages"
   },
   "private": true,
