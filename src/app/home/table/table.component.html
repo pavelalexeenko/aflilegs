@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="container-fluid">
+      <div class="row">
+        <label class="col-3 custom-control custom-checkbox" *ngFor="let leg of showLegs">
+          <input type="checkbox" class="custom-control-input" [(ngModel)]="leg.isActive">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description"><a href="//www.wowhead.com/?item={{ getItemId(leg.element) }}"></a></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <table class="table">
+      <thead class="thead-default">
+        <tr>
+          <th>#</th>
+          <th>First leg</th>
+          <th>Second leg</th>
+          <th>Damage</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of legList; index as i;">
+        <tr [attr.class]="showLeg(item) ? null : 'none'">
+          <th scope="row">{{i}}</th>
+          <td><a href="//www.wowhead.com/?item={{ getItemId(item.firstLeg) }}"></a> </td>
+          <td><a href="//www.wowhead.com/?item={{ getItemId(item.secondLeg) }}"></a></td>
+          <td>{{ item.damage }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
