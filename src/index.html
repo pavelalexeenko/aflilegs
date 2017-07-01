@@ -7,23 +7,6 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- This stores the URL the user was attempting to go to in sessionStorage,
-  and then redirects all 404 responses to the app’s index.html page -->
-  <!-- See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
-  <meta http-equiv="refresh" content="0;URL='https://pavelalexeenko.github.io/legendaryselector'"></meta>
-  <script>
-    sessionStorage.redirect = location.href;
-  </script>
-  <script>
-    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
-    (function () {
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.href) {
-        history.replaceState(null, null, redirect);
-      }
-    })();
-  </script>
   <script>
     (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -39,7 +22,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
-  <script type="text/javascript" src="//www.wowhead.com/widgets/power.js"></script>
+  <script type="text/javascript" src="//wow.zamimg.com/widgets/power.js"></script>
   <script>
     var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }
   </script>
